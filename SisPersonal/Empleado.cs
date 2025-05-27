@@ -8,7 +8,7 @@ public class InfoEmpleados
     private double sueldoBasico;
     private DateTime FechNac;
     private DateTime FechIngre;
-    
+
     private enum Cargos
     {
         Auxiliar,
@@ -22,6 +22,33 @@ public class InfoEmpleados
     public string Apellido { get => apellido; }
     public char EstadoCivil { get => estadoCivil; }
     public double SueldoBasico { get => sueldoBasico; }
-    public DateTime FechNac1 { get => FechNac;}
-    public DateTime FechIngre1 { get => FechIngre;}
+    public DateTime FechNac1 { get => FechNac; }
+    public DateTime FechIngre1 { get => FechIngre; }
+
+
+    public void NomEmpleado(string nombre)
+    {
+        nombre = Console.ReadLine();
+    }
+    public void ApEmpleado(string apellido)
+    {
+        apellido = Console.ReadLine();
+    }
+    public void FechNaci(DateTime fechaNac)
+    {
+
+    }
+    public void Estado(char estadoCivil)
+    {
+        
+    }
+    public void Sueldo(double sueldoB)
+    {
+
+    }
+
+    public void FechIn(DateTime fechaIn)
+    {
+
+    }
 }
