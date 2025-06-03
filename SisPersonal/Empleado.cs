@@ -1,9 +1,9 @@
 namespace InfoEmpleados;
 
 
-class InfoEmpleados
+class Empleados
 {
-    private enum Cargos
+    public enum Cargos
     {
         Auxiliar,
         Administrativo,
@@ -19,7 +19,7 @@ class InfoEmpleados
     private DateTime FechIngre;
     private Cargos cargo;
 
-    public InfoEmpleados(string nombre, string apellido, char estadoCivil, double sueldoBasico, DateTime FechNac, DateTime FechIngre)
+    public Empleados(string nombre, string apellido, char estadoCivil, double sueldoBasico, DateTime FechNac, DateTime FechIngre, Cargos cargo)
     {
         this.nombre = nombre;
         this.apellido = apellido;
@@ -27,10 +27,8 @@ class InfoEmpleados
         this.sueldoBasico = sueldoBasico;
         this.FechNac = FechNac;
         this.FechIngre = FechIngre;
-        this.Cargo = Cargo;
+        this.cargo = cargo;
     }
-
-
 
     public string Nombre { get => nombre; }
     public string Apellido { get => apellido; }
